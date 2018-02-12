@@ -1,0 +1,26 @@
+app-root {
+    display: block;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+.app-root-rect {
+    width: 10em;
+    height: 10em;
+    background-color: red;
+}
+
+.app-root-contacts li {
+    padding: 0.5em;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+}
+
+.app-root-contacts li button {
+    margin-left: auto;
+}
+
+.app-root-contacts li:hover {
+    background-color: lightblue;
+}

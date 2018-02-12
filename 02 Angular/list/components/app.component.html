@@ -1,0 +1,8 @@
+<h1>Hello Angular</h1>
+
+<ul class="app-root-contacts">
+    <li ng-repeat="contact in $ctrl.contacts">
+        <span>{{contact.name}}</span>
+        <button ng-click="$ctrl.remove(contact, $index)">Delete</button>
+    </li>
+</ul>
