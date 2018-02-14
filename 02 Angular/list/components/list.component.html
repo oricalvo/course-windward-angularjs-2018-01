@@ -1,0 +1,6 @@
+<ul class="app-list-ul">
+    <li ng-repeat="item in $ctrl.items">
+        <span>{{item.name}}</span>
+        <button ng-click="$ctrl.remove(item, $index)">Delete</button>
+    </li>
+</ul>

@@ -1,0 +1,14 @@
+.app-list-ul li {
+    padding: 0.5em;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    flex-direction: row;
+}
+
+.app-list-ul li button {
+    margin-left: auto;
+}
+
+.app-list-ul li:hover {
+    background-color: lightblue;
+}

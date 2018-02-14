@@ -1,14 +1,18 @@
 class AppComponent {
     constructor() {
-        this.contacts = [
+        const contacts = [
             {id:1, name: "Ori"},
             {id:2, name: "Roni"},
-            {id:3, name: "Udi"},
-        ];
+            ];
+
+        this.contacts = [];
+        for(let i=0; i<5000; i++) {
+            this.contacts.push({...contacts[0]});
+            this.contacts.push({...contacts[1]});
+        }
     }
 
-    onContactRemove($event) {
-        this.contacts.splice($event.index, 1);
+    noop() {
     }
 }
 
