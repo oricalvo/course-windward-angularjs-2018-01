@@ -1,0 +1,14 @@
+<h1>Hello Angular</h1>
+
+<button ng-click="$ctrl.refresh()">Refresh</button>
+<button ng-click="$ctrl.clear()">Clear</button>
+
+<div ng-if="$ctrl.state.loading">
+    Loading ...
+</div>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.state.contacts track by $index">
+        <app-contact-list-item contact="contact"></app-contact-list-item>
+    </li>
+</ul>
