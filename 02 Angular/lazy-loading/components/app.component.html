@@ -1,0 +1,16 @@
+<h1>Hello Angular</h1>
+
+<div class="buttons">
+    <button ng-click="$ctrl.lazyLoad()">Load Component</button>
+</div>
+
+<ul class="contacts">
+    <li ng-repeat="contact in $ctrl.contacts">
+        <span>{{contact.name}}</span>
+    </li>
+</ul>
+
+<div class="clock-cont">
+    <h2>Lazy loaded clock</h2>
+</div>
+
