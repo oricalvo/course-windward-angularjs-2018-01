@@ -1,0 +1,16 @@
+app-root {
+    display: block;
+    padding: 0.5em;
+    font-size: 1.5em;
+}
+
+.app-root-rect {
+    width: 10em;
+    height: 10em;
+    background-color: red;
+}
+
+form.ng-submitted .ng-invalid, .ng-touched.ng-invalid{
+    border: 1px solid red;
+    outline: none;
+}
