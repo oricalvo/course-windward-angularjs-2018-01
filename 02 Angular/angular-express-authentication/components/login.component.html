@@ -1,0 +1,26 @@
+<h1>Login</h1>
+
+<form name="$ctrl.form" novalidate>
+    <div>
+        <div>User Name</div>
+        <div>
+            <input ng-model="$ctrl.userName" name="userName" required>
+        </div>
+    </div>
+
+    <div>
+        <div>Password</div>
+        <div>
+            <input type="password" ng-model="$ctrl.password" name="password" required>
+        </div>
+    </div>
+
+    <div>
+        <button ng-click="$ctrl.login()">Login</button>
+    </div>
+</form>
+
+<div>
+    {{$ctrl.error}}
+</div>
+
