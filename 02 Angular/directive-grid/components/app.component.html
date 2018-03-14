@@ -1,6 +1,8 @@
 <h1>Hello Angular</h1>
 
 <grid data="$ctrl.contacts" item="contact">
+    <test></test>
+
     <column title="ID">
         <span>{{contact.id}}</span>
     </column>
@@ -12,4 +14,11 @@
     <column title="">
         <input type="checkbox" ng-model="contact.selected">
     </column>
+
+    <column title="">
+        <button ng-click="$ctrl.remove(contact, $index)">Delete</button>
+    </column>
+
 </grid>
+
+<button ng-click="$ctrl.change()">Change</button>

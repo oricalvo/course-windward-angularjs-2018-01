@@ -1,7 +1,17 @@
 <h1>Hello Angular</h1>
 
+<div layout="row">
+    <div class="left">
+        Left
+    </div>
+
+    <div class="right">
+        Right
+    </div>
+</div>
+
 <ul>
-    <li ng-repeat="contact in $ctrl.contacts" >
+    <li ng-repeat="contact in $ctrl.contacts" border>
         <span>{{contact.name}}</span>
     </li>
 </ul>

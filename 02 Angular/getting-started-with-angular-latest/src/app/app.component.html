@@ -1,0 +1,12 @@
+<h1>Hello Angular 5</h1>
+
+<ul>
+  <li *ngFor="let contact of contacts">
+    <span>{{contact.name}}</span>
+  </li>
+</ul>
+
+<app-clock [format]="'ss'"></app-clock>
+
+<input [(ngModel)]="name">
+<button (click)="sayHello()">Say Hello</button>
