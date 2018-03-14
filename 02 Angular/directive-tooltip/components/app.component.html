@@ -1,0 +1,14 @@
+<h1>Hello Angular</h1>
+
+<!--<button tooltip="Yo yo">Click me</button>-->
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts">
+        <span tooltip="contact.name">{{contact.name}}</span>
+        <button ng-click="$ctrl.change(contact)">Change</button>
+    </li>
+</ul>
+
+<app-clock></app-clock>
+
+<tooltip></tooltip>

@@ -1,0 +1,9 @@
+app-new {
+    display: block;
+}
+
+app-new textarea {
+    width: 40em;
+    height: 20em;
+    margin-top: 1em;
+}

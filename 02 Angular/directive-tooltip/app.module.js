@@ -1,0 +1,7 @@
+import * as angular from "angular";
+export const appModule = angular.module("myApp", []);
+
+appModule.run(["$rootScope", function($rootScope) {
+}]);
+
+

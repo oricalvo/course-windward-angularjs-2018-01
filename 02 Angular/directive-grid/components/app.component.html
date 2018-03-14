@@ -1,0 +1,15 @@
+<h1>Hello Angular</h1>
+
+<grid data="$ctrl.contacts" item="contact">
+    <column title="ID">
+        <span>{{contact.id}}</span>
+    </column>
+
+    <column title="Name">
+        <span>{{contact.name}}</span>
+    </column>
+
+    <column title="">
+        <input type="checkbox" ng-model="contact.selected">
+    </column>
+</grid>
